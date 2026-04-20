@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Claude RTL — עברית מימין",
+  "version": "1.0",
+  "description": "מיישר אוטומטית תשובות בעברית לצד ימין בממשק Claude",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["rtl.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

@@ -1,0 +1,55 @@
+/* Claude RTL Extension — מיישר עברית לימין */
+
+/* תשובות Claude */
+.font-claude-response-body,
+.font-claude-message {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext;
+}
+
+/* רשימות */
+.font-claude-response-body ul,
+.font-claude-response-body ol,
+.font-claude-message ul,
+.font-claude-message ol {
+  direction: rtl !important;
+  text-align: right !important;
+  padding-left: 0 !important;
+  padding-right: 1.5em !important;
+}
+
+li.whitespace-normal.break-words.pl-2,
+.font-claude-response-body li,
+.font-claude-message li {
+  direction: rtl !important;
+  text-align: right !important;
+  padding-left: 0 !important;
+  padding-right: 1.5em !important;
+}
+
+/* תיבת הקלט — כל ה-p בתוכה */
+div[contenteditable="true"],
+div[contenteditable="true"] p,
+div[contenteditable="true"] div,
+div[contenteditable="true"] span {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+}
+
+/* שמור על קוד משמאל */
+.font-claude-response-body pre,
+.font-claude-response-body code,
+.font-claude-message pre,
+.font-claude-message code {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed;
+}
+
+/* הודעות המשתמש בצ'אט */
+p.whitespace-pre-wrap.break-words {
+  direction: rtl !important;
+  text-align: right !important;
+}
